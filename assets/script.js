@@ -1,11 +1,8 @@
-// Menu mobile toggle
 const toggle = document.querySelector('.nav-toggle');
 const list = document.querySelector('.nav-list');
 if (toggle && list) {
   toggle.addEventListener('click', () => list.classList.toggle('show'));
 }
-
-// Ajuste de foco suave para compensar header sticky (opcional)
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', e=>{
     const id = a.getAttribute('href').slice(1);
